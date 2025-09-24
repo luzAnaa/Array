@@ -6,8 +6,11 @@ do{
         frutas.push(f)
     }
     else {
-        alert("Fruta inválida")
-        f = prompt("Digite a fruta:")
+        if (confirm("Fruta inválida. Deseja tentar novamente?")) {
+          //  f = ""; // força a repetição do loop
+        } else {
+            break; // encerra o loop se clicar em Cancelar
+        }
     }
 }while(f!=null)
 
