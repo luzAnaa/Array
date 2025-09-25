@@ -7,9 +7,12 @@ do{
     }
     else {
         if (confirm("Fruta inválida. Deseja tentar novamente?")) {
-          //  f = ""; // força a repetição do loop
+            f = prompt("Digite a fruta:")
+            if(f!=null && f!=""){
+            frutas.push(f)
+    }
         } else {
-            break; // encerra o loop se clicar em Cancelar
+            break
         }
     }
 }while(f!=null)
